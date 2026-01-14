@@ -4,6 +4,7 @@ import { LuTwitter, LuLinkedin, LuInstagram, LuPhone } from "react-icons/lu";
 import { MdCopyright } from "react-icons/md";
 import { LiaEnvelope } from "react-icons/lia";
 import FooterLinks from "./FooterLinks";
+import bg from "../assets/Background.png"
 
 const Footer = () => {
     return (
@@ -13,7 +14,7 @@ const Footer = () => {
                 <div className="w-[80%] md:w-[60%] lg:w-[30%]">
                     <div className="flex shrink-0 items-center">
                         <img
-                            src="src/assets/Background.png"
+                            src={bg}
                             alt="logo"
                             className="h-8 w-auto mx-5"
                         />
