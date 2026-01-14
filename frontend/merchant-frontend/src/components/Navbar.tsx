@@ -81,7 +81,7 @@ const Navbar = () => {
                                 ))}
 
                                 <div className=" lg:w-[10%] lg:mx-10">
-                                    <button className="lg:w-20 cursor-pointer h-auto p-2 rounded-lg hover:bg-green-500 hover:text-white">
+                                    <button className="lg:w-20 cursor-pointer h-auto p-2 rounded-lg hover:bg-green-500 hover:text-white" onClick={() => navigate('/login')}>
                                         Log in
                                     </button>
                                 </div>
