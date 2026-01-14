@@ -1,6 +1,6 @@
 import { CheckCircleIcon } from "@heroicons/react/24/outline"
 import {ArrowRightIcon} from "@heroicons/react/24/outline";
-
+import landing from "../assets/landing.png"
 const HeroSection = () => {
     return (
         <div className="flex flex-col lg:flex-row lg:mb-20">
@@ -66,7 +66,7 @@ const HeroSection = () => {
             <div className="lg:w-[50%]">
                 <div className="relative mx-4 mt-8 md:mx-8 lg:mt-10">
                     <div className="h-auto">
-                        <img src="src/assets/landing.png" alt="landing-image" className="lg:w-full rounded-xl"/>
+                        <img src={landing} alt="landing-image" className="lg:w-full rounded-xl"/>
                     </div>
 
                     <div className=" absolute -bottom-8 left-3 bg-white w-60 h-18 flex space-x-3 pt-3 px-3 rounded-xl shadow-2xl border border-gray-200">

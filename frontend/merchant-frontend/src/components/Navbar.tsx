@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+import bg from "../assets/Background.png"
 
 const navigation = [
     { name: "Features", href: "#", current: true },
@@ -21,7 +22,7 @@ const Navbar = () => {
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="flex shrink-0 items-center">
                         <img
-                            src="src/assets/Background.png"
+                            src={bg}
                             alt="logo"
                             className="h-8 w-auto mx-5"
                         />
