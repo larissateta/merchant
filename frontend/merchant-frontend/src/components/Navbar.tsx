@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import bg from "../assets/Background.png"
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
     { name: "Features", href: "#", current: true },
@@ -16,6 +17,7 @@ function classNames(...classes: any[]) {
 }
 const Navbar = () => {
     const [expanded, setExpanded] = useState(false);
+    const navigate = useNavigate();
     return (
         <div>
             <div className="mx-auto bg-white fixed w-full z-10">
@@ -46,7 +48,7 @@ const Navbar = () => {
                             ))}
                         </div>
                         <div className=" lg:w-[10%] lg:mx-10">
-                            <button className="lg:w-20 cursor-pointer h-auto p-2 rounded-lg hover:bg-green-500 hover:text-white" onClick={() => window.location.href = '/login'}>
+                            <button className="lg:w-20 cursor-pointer h-auto p-2 rounded-lg hover:bg-green-500 hover:text-white" onClick={() => navigate('/login')}>
                                 Log in
                             </button>
                         </div>
