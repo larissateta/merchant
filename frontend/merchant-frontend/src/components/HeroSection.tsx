@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row lg:mb-20">
 
             <div className="lg:w-[50%] md:mt-10">
-                <div className="bg-blue-100 w-sm h-12 mx-auto rounded-3xl p-4 lg:mx-10 md:mx-10">
+                <div className="bg-blue-100 w-sm h-12 mx-auto rounded-3xl p-4 lg:mx-10 md:mx-10 mt-10">
                     <div className="flex space-x-4">
                         <div className="w-2 h-2 bg-emerald-600 rounded-full mt-1"></div>
                         <div>
