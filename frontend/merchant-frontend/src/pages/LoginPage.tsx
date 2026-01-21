@@ -1,13 +1,16 @@
 import bg from "../assets/Background.png"
 import cont from "../assets/Container.jpg"
 import { EnvelopeIcon, LockClosedIcon, ShieldCheckIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
+import { LoginImgSection } from "../components/loginImgSection";
 
 const Login = () => {
+    const navigate = useNavigate();
     return (
         <div className="flex flex-col mx-8 md:mx-30 lg:flex-row lg:h-screen">
             <div className="w-full lg:w-1/2 flex items-center justify-center py-50 lg:py-0 ">
                 <div className="w-full max-w-md">
-                    <div className="flex items-center lg:mx-30 mx-20 md:mx-30">
+                    <div className="flex items-center lg:mx-30 mx-20 md:mx-30 cursor-pointer" onClick={() => navigate("/")}>
                         <img src={bg} alt="logo" className="h-8 w-8" />
                         <h1 className="text-lg mx-2 text-nowrap">Credit Jambo</h1>
                     </div>
@@ -48,8 +51,8 @@ const Login = () => {
                     </div>
 
                     <div className="lg:mx-30 mx-22 md:mx-33">
-                        <button className="w-45 bg-green-500 text-white p-3 rounded-2xl mt-10 cursor-pointer">
-                            Get Started
+                        <button className="w-45 bg-green-500 text-white p-3 rounded-2xl mt-10 cursor-pointer" onClick={() => navigate('/dashboard')}>
+                            Sign In
                         </button>
                     </div>
 
@@ -61,26 +64,7 @@ const Login = () => {
 
 
             <div className="hidden lg:block lg:w-1/2 relative">
-
-                <img
-                    src={cont}
-                    alt="container"
-                    className="w-11/12 h-11/12 object-cover mt-7 rounded-2xl"
-                />
-
-                <div className="absolute inset-0 bg-black/50 w-11/12 h-11/12 mt-7 rounded-2xl"></div>
-
-                <div className="absolute inset-0 flex flex-col justify-center px-15 pt-96">
-                    <div className="flex items-center">
-                        <ShieldCheckIcon className="h-8 w-8 text-white mr-3" />
-                        <span className="text-lg text-white">Secure & Verified</span>
-                    </div>
-
-                    <div className="text-white mt-6 max-w-lg">
-                        <h1 className="text-3xl font-bold">Your Security is Our Priority</h1>
-                        <h1 className="text-lg mt-4">Complete KYC verification to ensure secure transactions and protect your account.</h1>
-                    </div>
-                </div>
+                <LoginImgSection/>
             </div>
         </div>
     )

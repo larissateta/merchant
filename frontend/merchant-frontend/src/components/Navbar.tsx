@@ -53,7 +53,7 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div className=" lg:w-[10%] lg:mx-5">
-                            <button className="lg:w-30 cursor-pointer h-auto p-2 rounded-lg bg-green-500 text-white">
+                            <button className="lg:w-30 cursor-pointer h-auto p-2 rounded-lg bg-green-500 text-white" onClick={() => navigate('/verify')}>
                                 Get Started
                             </button>
                         </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
                                     </button>
                                 </div>
                                 <div className=" lg:w-[10%] lg:mx-5">
-                                    <button className="lg:w-30 cursor-pointer h-auto p-2 rounded-lg bg-green-500 text-white">
+                                    <button className="lg:w-30 cursor-pointer h-auto p-2 rounded-lg bg-green-500 text-white" onClick={() => navigate('/verify')}>
                                         Get Started
                                     </button>
                                 </div>
