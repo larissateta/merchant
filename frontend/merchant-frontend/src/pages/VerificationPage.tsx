@@ -1,7 +1,5 @@
 import bg from "../assets/Background.png"
 import { useState } from "react";
-import cont from "../assets/Container.jpg"
-import { ShieldCheckIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
 import { LoginImgSection } from "../components/loginImgSection";
 
