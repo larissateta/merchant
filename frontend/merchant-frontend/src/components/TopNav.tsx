@@ -1,6 +1,6 @@
 import bg from "../assets/Background.png"
 import { MoonIcon, Bars3Icon } from "@heroicons/react/24/outline"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { MdOutlineDashboard } from "react-icons/md";
 import { TbReportAnalytics, TbReceiptDollar } from "react-icons/tb";
 import { LuUsers } from "react-icons/lu";
@@ -18,6 +18,11 @@ const navigation = [
 export const TopNav = () => {
     const navigate = useNavigate();
     const [expand, setExpand] = useState(false)
+
+    useEffect(() => {
+        document.body.style.overflow = expand ? "hidden" : "";
+    }, [expand]);
+
 
     return (
         <>
@@ -42,7 +47,7 @@ export const TopNav = () => {
             <div className="h-16"></div>
 
             {expand && (
-                <div className="relative mt-0 border-r border-b shadow-lg w-64 bg-white text-white p-4 lg:hidden">
+                <div className="fixed mt-0 border-r border-b shadow-lg w-64 bg-white text-white p-4 lg:hidden">
                     <div className="mt-3">
                         {navigation.map((item) => {
                             const Icon = item.icon;
