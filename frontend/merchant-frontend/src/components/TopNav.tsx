@@ -21,7 +21,7 @@ export const TopNav = () => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 right-0 bg-white w-full z-10 h-16 border-b border-gray-400">
+            <div className="fixed top-0 left-0 right-0 bg-white w-full z-10 h-16 border-b border-gray-200">
                 <div className="relative flex h-16 items-center justify-between mx-4">
                     <div className="flex shrink-0 items-center">
                         <Bars3Icon className="w-6 h-6 lg:hidden cursor-pointer" onClick={() => setExpand(!expand)} />
@@ -32,7 +32,7 @@ export const TopNav = () => {
                         />
                         <h1 className="font-mono">Credit Jambo</h1>
                     </div>
-                    <div className="flex mx-16">
+                    <div className="flex mx-5 lg:mx-16">
                         <MoonIcon className="h-5 w-5 mt-2 mr-5" />
                         <div className="bg-green-500 rounded-full text-white text-center w-9 h-9 p-2.5 text-md">J</div>
                         <h1 className="hidden lg:block mt-2 ml-5">John Kamau</h1>

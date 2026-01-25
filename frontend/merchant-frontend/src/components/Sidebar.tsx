@@ -16,7 +16,7 @@ const navigation = [
 export const Sidebar = () => {
     const navigate = useNavigate();
     return (
-        <div className="fixed top-16 left-0 bottom-0 w-64 border-r border-gray-400 p-4 bg-white pt-5 hidden lg:block">
+        <div className="fixed top-16 left-0 bottom-0 w-64 border-r border-gray-200 p-4 bg-white pt-5 hidden lg:block">
             {navigation.map((item) => {
                 const Icon = item.icon;
                 return (
